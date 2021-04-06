@@ -1,7 +1,9 @@
 //Burada amazon üst headerını yapıyoruz.
 //Header = logo + search input field + children(sign in, orders,prime,basket
-import React from 'react'
-import './Header.css'
+import React from 'react';
+import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
+
 //logo
 // search alanı
 // search button
@@ -17,8 +19,8 @@ function Header() {
                 src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
             />
                 <div className="header_search">
-                    <input className="header_serachInput" type="text"/>
-                    {/*Logo*/}
+                    <input className="header_searchInput" type="text"/>
+                    <SearchIcon className="header_searchIcon"></SearchIcon>
                 </div>
 
             <div className="header_nav">
